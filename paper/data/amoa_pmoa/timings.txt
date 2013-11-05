@@ -1,0 +1,17 @@
+time ../../../src/gf_classify -c ../all_mmo_seqs_unaligned.fasta ../../icms/amoa.icm ../../icms/pmoa.icm ../../icms/bg.icm > all_mmo_seqs_gfclassify.txt
+
+real 0m2.350s
+user 0m2.323s
+sys  0m0.010s
+
+time /scratch/fishjord/apps/hmmer3/binaries/hmmscan --tblout fwd_all_mmo_seqs_hmmer3.txt -o /dev/null ../../hmms/downsampled_fungene_seeds/amoapmoa.hmm ../all_mmo_seqs_unaligned.fasta 
+
+real 3m27.852s
+user 3m23.526s
+sys  0m5.973s
+
+time /scratch/fishjord/apps/hmmer3/binaries/hmmscan --tblout rc_all_mmo_seqs_hmmer3.txt -o /dev/null ../../hmms/downsampled_fungene_seeds/amoapmoa.hmm ../all_mmo_seqs_unaligned_rc.fasta 
+
+real		0m7.535s
+user		0m3.479s
+sys		0m5.301s
