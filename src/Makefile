@@ -1,4 +1,4 @@
-glimmer_dir=/scratch/fishjord/apps/glimmer3.02/
+glimmer_dir=/usr/local/google/home/fishjord/tmp/glimmer3.02
 
 gf_classify: gfclassify.cc gfclassify.h build_glimmer copy_headers
 	g++ -o gf_classify -Iincludes gfclassify.cc gfclassify.h glimmer_libs/libGLMicm.a glimmer_libs/libGLMcommon.a

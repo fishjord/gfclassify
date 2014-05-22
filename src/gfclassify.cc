@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <libgen.h>
 #include <float.h>
+#include <stdarg.h>
 
 //**ALD  Gets rid of make undefined reference error
 int Unused = Filter ('a');
